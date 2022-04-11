@@ -22,7 +22,7 @@
                     <li class="list-group-item"><b>Harga : </b>Rp.{{ $product->harga }}</li>
                     <li class="list-group-item"><b>Deskripsi : </b>{{ $product->deskripsi }}</li>
             </div>
-            <a class="btn btn-success mt-3 mb-3" href="/dashboard/product">kembali</a>
+            <a class="btn btn-success mt-3 mb-3" href="/product">kembali</a>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@
         <div class="profile">
             <h1 class="fw-bold">Toko Furniture</h1>
             <h3>
-                Kami adalah toko yang memnjual berbagai macam furniture yang nyaman dan elegan
+                Kami adalah toko yang menjual berbagai macam furniture yang nyaman dan elegan
             </h3>
         </div>
     </div>
