@@ -8,9 +8,17 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(){
+
+        $products = Product::latest();
+
+        if(request('search')){
+            $products->where('nama', 'like' , '%' . request('search') . '%')
+                     ->orWhere('merk', 'like' , '%' . request('search') . '%');
+        }
+
         return view('product',[
             "title"=>"Product",
-            "product" => Product::latest()->get()
+            "product" => $products->get()
         ]);
     }
 

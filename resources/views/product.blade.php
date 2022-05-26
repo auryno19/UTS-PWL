@@ -6,6 +6,17 @@
     <b> Our Products </b>
 </h1>
 
+<div class="row justify-content-center">
+    <div class="col-md-6 mb-3">
+        <form action="/product">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Cari Produk" name="search" value="{{ request('search') }}">
+                <button class="btn btn-dark" type="submit">Search</button>
+              </div>
+        </form>
+    </div>
+</div>
+
 @if ($product->count())
 <div class="card mb-3">
     <div style="max-height: 400px; overflow:hidden">

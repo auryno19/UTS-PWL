@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('kode');
             $table->string('nama');
             $table->string('merk');
-            $table->string('kategori');
+            $table->foreignId('category_id');
             $table->integer('harga');
             $table->text('deskripsi');
             $table->string('photo');

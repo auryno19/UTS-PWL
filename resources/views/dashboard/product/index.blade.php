@@ -31,7 +31,7 @@
         <td>{{ $loop->iteration }}</td>
         <td>{{ $p->nama }}</td>
         <td>{{ $p->merk }}</td>
-        <td>{{ $p->kategori }}</td>
+        <td>{{ $p->category->name }}</td>
         <td>{{ $p->harga }}</td>
         <td>
           <a href="/dashboard/product/{{ $p->id }}" class="badge bg-info"><span data-feather="eye"></span></a>

@@ -38,13 +38,13 @@
               @enderror
           </div>
           <div class="mb-3">
-            <label for="kategori" class="form-label">Kategori</label>
-           <select class="form-select" name="kategori" >
+            <label for="category_id" class="form-label">Kategori</label>
+           <select class="form-select" name="category_id" >
               @foreach ($category as $c)
-              @if (old('kategori', $product->kategori) === $c->name)
-                <option value="{{ $c->name }}" selected>{{ $c->name }}</option>
+              @if (old('category_id', $product->category_id) == $c->id)
+                <option value="{{ $c->id }}" selected>{{ $c->name }}</option>
               @else
-                <option value="{{ $c->name }}">{{ $c->name }}</option>
+                <option value="{{ $c->id }}">{{ $c->name }}</option>
               @endif
               @endforeach
            </select>

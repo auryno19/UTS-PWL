@@ -14,7 +14,7 @@
                     <li class="list-group-item"><b>Kode :  </b>{{ $product->kode }}</li>
                     <li class="list-group-item"><b>Nama : </b>{{ $product->nama }}</li>
                     <li class="list-group-item"><b>Merk : </b>{{ $product->merk }}</li>
-                    <li class="list-group-item"><b>Kategori : </b>{{ $product->kategori }}</li>
+                    <li class="list-group-item"><b>Kategori : </b>{{ $product->category->name }}</li>
                     <li class="list-group-item"><b>Harga : </b>Rp.{{ $product->harga }}</li>
                     <li class="list-group-item"><b>Deskripsi : </b>{{ $product->deskripsi }}</li>
             </div>

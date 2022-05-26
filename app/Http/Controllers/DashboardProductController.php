@@ -45,7 +45,7 @@ class DashboardProductController extends Controller
             'kode' => 'required|unique:products',
             'nama' => 'required',
             'merk' => 'required',
-            'kategori' => 'required',
+            'category_id' => 'required',
             'harga' => 'required',
             'deskripsi' => 'required',
             'photo' => 'image|file|max:2048'
@@ -100,7 +100,7 @@ class DashboardProductController extends Controller
         $rules = [
             'nama' => 'required',
             'merk' => 'required',
-            'kategori' => 'required',
+            'category_id' => 'required',
             'harga' => 'required',
             'deskripsi' => 'required',
             'photo' => 'image|file|max:2048'
